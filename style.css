@@ -1,0 +1,212 @@
+
+body {
+    font-family: sans-serif;
+    /* background-color: #121212; */
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  
+  }
+  
+  .game-container {
+    background: #1a1a1a;
+   
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 20px yellowgreen;
+  }
+  
+  
+  
+  .board {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    /* border: 2px solid #4caf50; */
+    border: 8px solid yellowgreen;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    margin: 20px auto;
+    /* background-color: #000; */
+    background-image: url(image/Screenshot\ \(53\).png);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  /* .snake {
+    background: limegreen;
+    border-radius: 4px;
+  } */
+  
+  
+  
+  .snake {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, #201f1f, yellowgreen);
+    border-radius: 5px;
+   
+    animation: snakeGlow 0.4s infinite alternate;
+    animation: pulse 1s infinite ;
+    box-shadow: 0 0 20px yellowgreen;
+    transition: transform 0.15s linear;
+  }
+  .snake {
+    animation: snakeGlow 0.8s infinite alternate;
+    transition: all 0.2s ease;
+  }
+  
+  
+  
+  @keyframes snakeGlow {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px yellowgreen;
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px yellowgreen;
+      opacity: 0.95;
+    }
+  }
+  
+  
+  .food {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 50%;
+    animation: pulse 1s infinite ;
+    box-shadow: 0 0 20px yellow;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  .controls {
+    /* margin-top: 20px; */
+   
+    
+    border: 2px solid yellowgreen;
+  }
+  .controls .btn {
+    font-size: 4vh;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    /* background: #333; */
+    background-color: white;
+    /* color: white; */
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .controls .btn:hover {
+    background: yellowgreen;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 999;
+  }
+  
+  .overlay.active {
+    display: flex;
+  }
+  
+  .game-over {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  #restartBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4caf50;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  @media (max-width: 500px) {
+    .board {
+      width: 300px;
+      height: 300px;
+      grid-template-columns: repeat(20, 1fr);
+      grid-template-rows: repeat(20, 1fr);
+    }
+
+    .controls {
+        width:100px;
+        height: 100px;
+        border: 0px solid ;
+    }
+  
+    .controls .btn {
+      font-size: 18px;
+      padding: 8px 12px;
+      margin: 2px;
+    }
+  
+    .game-container {
+      padding: 10px;
+    }
+  }
+  
+  .snake-head {
+    animation: snakeGlowHead 0.6s infinite alternate;
+    background: linear-gradient(45deg, #00ff88, #00cc66);
+    box-shadow: 0 0 15px #00ff88;
+  }
+  
+  @keyframes snakeGlowHead {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px #00ff88;
+    }
+    100% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00ff88;
+    }
+  }
+
+
+  #difficulty{
+    padding: 2px;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+  }
+  
+

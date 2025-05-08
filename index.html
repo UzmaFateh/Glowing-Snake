@@ -1,0 +1,66 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <center><h1>🐍 Snake Game</h1></center>
+<center>
+    <select id="difficulty">
+      <option value="200">Easy</option>
+      <option value="150" selected>Medium</option>
+      <option value="100">Hard</option>
+      <option value="70">Very Hard</option>
+    </select>
+  </center>
+    <div class="score-board">Score: <span id="score">1</span></div>
+
+    <div class="board" id="gameBoard"></div>
+
+    <!-- Touch Controls -->
+<center>
+    <table class="controls">
+      <tr>
+        <td></td>
+        <td><button class="btn" id="up" data-dir="up">⬆️</button></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td> <button class="btn" id="left"  data-dir="left">⬅️</button></td>
+        
+        <td></td>
+        <td> <button class="btn" id="right"  data-dir="right">➡️</button></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td> <button class="btn" id="down"  data-dir="down">⬇️</button></td>
+        <td></td>
+      </tr>
+    </table>
+  </center>
+  </div>
+
+ 
+
+  <!-- Game Over Overlay -->
+  <div class="overlay" id="overlay">
+    <div class="game-over">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="finalScore"></span></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
