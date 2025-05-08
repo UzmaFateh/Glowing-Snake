@@ -105,7 +105,7 @@ body {
   }
   
   .controls {
-    /* margin-top: 20px; */
+    margin-top: 20px;
    
     
     border: 2px solid yellowgreen;
@@ -169,13 +169,14 @@ body {
     }
 
     .controls {
+        margin-top: 20px;
         width:100px;
         height: 100px;
         border: 0px solid ;
     }
   
     .controls .btn {
-      font-size: 18px;
+      font-size: 24px;
       padding: 8px 12px;
       margin: 2px;
     }
