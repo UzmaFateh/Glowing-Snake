@@ -6,7 +6,7 @@ body {
     color: white;
     text-align: center;
     margin: 0;
-    padding-left: 20px;
+    /* padding-left: 20px */
   
   }
   
@@ -23,6 +23,7 @@ body {
 
   .game-container h1{
     box-shadow: 0 0 20px yellow;
+    color: yellow;
     
   }
   
@@ -176,6 +177,7 @@ body {
     background: #1a1a1a;
    padding-top: 5px;
    padding-bottom: 5px;
+
     
     border-radius: 12px;
     max-width: 500px;
@@ -186,9 +188,9 @@ body {
   
     .board {
       width: 320px;
-      height: 330px;
+      height: 320px;
       grid-template-columns: repeat(20, 1fr);
-      grid-template-rows: repeat(22, 1fr);
+      grid-template-rows: repeat(20, 1fr);
     }
 
     .controls {
