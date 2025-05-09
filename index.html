@@ -1,55 +1,59 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snake Game</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
+  <center>
   <div class="game-container">
-    <center><h1>🐍 Snake Game</h1></center>
-<center>
-    <select id="difficulty">
-      <option value="300">Easy</option>
-      <option value="200" selected>Medium</option>
-      <option value="150">Hard</option>
-      <option value="100">Very Hard</option>
-    </select>
-  </center>
+    <center>
+      <h1>🐍 Snake Game</h1>
+    </center>
+    <center>
+      <select id="difficulty">
+        <option value="300">Easy</option>
+        <option value="200" selected>Medium</option>
+        <option value="150">Hard</option>
+        <option value="100">Very Hard</option>
+      </select>
+    </center>
     <div class="score-board">Score: <span id="score">1</span></div>
 
-    <div class="board" id="gameBoard"></div>
+    <div class="board" id="gameBoard">
+  
+    </div>
 
     <!-- Touch Controls -->
-<center>
-    <table class="controls">
-      <tr>
-        <td></td>
-        <td><button class="btn" id="up" data-dir="up">⬆️</button></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td> <button class="btn" id="left"  data-dir="left">⬅️</button></td>
-        
-        <td></td>
-        <td> <button class="btn" id="right"  data-dir="right">➡️</button></td>
-       
-      </tr>
-      <tr>
-        <td></td>
-        <td> <button class="btn" id="down"  data-dir="down">⬇️</button></td>
-        <td></td>
-      </tr>
-    </table>
-  </center>
-  </div>
+    <center>
+      <table class="controls">
+        <tr>
+          <td></td>
+          <td><button class="btn" id="up" data-dir="up">⬆️</button></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td> <button class="btn" id="left" data-dir="left">⬅️</button></td>
 
- 
+          <td></td>
+          <td> <button class="btn" id="right" data-dir="right">➡️</button></td>
+
+        </tr>
+        <tr>
+          <td></td>
+          <td> <button class="btn" id="down" data-dir="down">⬇️</button></td>
+          <td></td>
+        </tr>
+      </table>
+    </center>
+  </div>
+  </center>
+
+
 
   <!-- Game Over Overlay -->
   <div class="overlay" id="overlay">
@@ -62,5 +66,5 @@
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
