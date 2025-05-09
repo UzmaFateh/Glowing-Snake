@@ -123,6 +123,7 @@ body {
     font-size: 4vh;
     padding: 10px;
     margin: 5px;
+ 
     border: none;
     /* background: #333; */
     background-color: white;
@@ -199,13 +200,17 @@ body {
         width:200px;
         height: 200px;
         border: 0px solid ;
+        border: 2px solid blue;
+        padding-top: 20px;
         
     }
   
     .controls .btn {
       font-size: 24px;
       padding: 8px 12px;
+   
       margin: 2px;
+      
     }
   
     .game-container {
